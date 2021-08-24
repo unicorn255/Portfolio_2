@@ -858,7 +858,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+
   opacity: .2;
 }
 
@@ -926,7 +926,68 @@ hr {
   width: 72px;
   background-color: #cf1767;
 }
+progress {
+	vertical-align: baseline;
+}
 
+/* Remove the default vertical scrollbar in IE 10+. */
+textarea {
+	overflow: auto;
+}
+
+/* 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10. */
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;  /* 1 */
+	padding: 0;  /* 2 */
+}
+
+/* Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+/* 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+ [type="search"] {
+	-webkit-appearance: textfield;  /* 1 */
+	outline-offset: -2px;  /* 2 */
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/* 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;  /* 1 */
+	font: inherit;  /* 2 */
+}
+details {
+	display: block;
+}
+
+/* Add the correct display in all browsers. */
+summary {
+	display: list-item;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## misc
+ * ------------------------------------------------------------------- */
+
+/* Add the correct display in IE 10+. */
+template {
+	display: none;
+}
+
+/* Add the correct display in IE 10. */
+[hidden] {
+	display: none;
+}
 @media screen and (max-width:1400px) {
   .intro-text h3 {
     font-size: 2.2rem;
@@ -1308,37 +1369,17 @@ hr {
       }
     
     }
-    .header-logo {
-      display: inline-block;
-      margin: 6px 0 0 0;
-      padding: 0;
-      -webkit-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
-      position: absolute;
-      top: 50%;
-      left: 40px;
-    }
     
-    .header-logo a {
-      display: block;
-      margin: 0;
-      padding: 0;
-      outline: 0;
-      border: none;
-      transition: all .3s;
-    }
+     
     
-    .header-logo img {
-      width: 132px;
-      height: 36px;
-      margin: 0;
-    }
     
     /* -------------------------------------------------------------------
      * ## main navigation
      * ------------------------------------------------------------------- */
     .header-nav-wrap {
       display: inline-block;
+      text-align: center;
+      background: #050505 !important;
     }
     
     .header-nav-wrap ul {
@@ -1346,6 +1387,7 @@ hr {
       list-style: none;
       margin-left: 0;
       margin-top: 18px;
+      text-align: center;
     }
     
     .header-nav-wrap li {
@@ -1527,17 +1569,14 @@ hr {
         top: 0;
       }
     
-      .header-logo img {
-        width: 128px;
-        height: 30px;
-      }
+      
     
       .header-nav-wrap {
         display: none;
         text-align: left;
         height: auto;
         width: 100%;
-        background-color: #050505;
+        background-color: #050505 i
         padding: 120px 44px 64px;
       }
     
@@ -1597,4 +1636,351 @@ hr {
       }
     
     }
+    .s-cta {
+      padding-top: 13.5rem;
+      padding-bottom: 13.6rem;
+      background-color: #000000;
+      border-top: 1px solid rgba(255, 255, 255, 0.03);
+      font-size: 2.4rem;
+      line-height: 1.833;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+    }
     
+    .s-cta a {
+      color: #ffffff;
+    }
+    
+    .s-cta a:hover,
+    .s-cta a:focus,
+    .s-cta a:active {
+      color: #cf1767;
+    }
+    
+    .s-cta .section-desc {
+      margin-top: 0;
+    }
+    
+    .cta-content {
+      max-width: 800px;
+    }
+    
+    .cta-content .btn {
+      max-width: 600px;
+      background-color: #cf1767;
+      border: 0.2rem solid #cf1767;
+    }
+    
+    .cta-content .btn:hover,
+    .cta-content .btn:focus {
+      background-color: #ffffff;
+      border: 0.2rem solid #ffffff;
+      color: #000000;
+    }
+    
+    /* ------------------------------------------------------------------- 
+     * responsive:
+     * cta
+     * ------------------------------------------------------------------- */
+    @media screen and (max-width:800px) {
+      .s-cta {
+        font-size: 2.2rem;
+      }
+    
+      .cta-content {
+        max-width: 600px;
+      }
+    
+    }
+    
+    @media screen and (max-width:600px) {
+      .s-cta {
+        font-size: 2rem;
+      }
+    
+    }
+    
+    @media screen and (max-width:600px) {
+      .s-cta {
+        font-size: 1.8rem;
+      }
+    
+    }
+    .s-contact {
+      padding-top: 18.4rem;
+      padding-bottom: 6.4rem;
+      background-color: #050505;
+    }
+    
+    .contact-main a {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: inline-block;
+    }
+    
+    .contact-main a:hover,
+    .contact-main a:focus,
+    .contact-main a:active {
+      color: #cf1767;
+      border-bottom: 1px solid white;
+    }
+    
+    .contact-email {
+      font-family: "Roboto", sans-serif;
+      font-size: 11.2rem;
+      font-weight: 400;
+      line-height: 1;
+      margin: 5.6rem 0 8rem;
+    }
+    
+    .contact-infos {
+      margin-top: 12.8rem;
+      font-family: "Frank Ruhl Libre", serif;
+      font-weight: 400;
+      font-size: 4.2rem;
+      line-height: 1.333;
+    }
+    
+    .contact-infos .column {
+      margin-bottom: 1.6rem;
+    }
+    
+    .contact-infos h4 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 1.333;
+      margin-top: 0;
+      margin-bottom: .8rem;
+      color: rgba(255, 255, 255, 0.35);
+    }
+    
+    .contact-infos a {
+      color: #ffffff;
+    }
+    
+    .contact-infos a:hover,
+    .contact-infos a:focus,
+    .contact-infos a:active {
+      color: #cf1767;
+    }
+    
+    .contact-social ul {
+      list-style: none;
+      margin-left: 0;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+    }
+    
+    .contact-social ul li {
+      padding-left: 0;
+    }
+    
+    .contact-social ul li::before {
+      content: "/";
+      color: #ffffff;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    
+    .contact-social ul li:first-child::before {
+      display: none;
+    }
+    
+    /* ------------------------------------------------------------------- 
+    * responsive:
+    * contact
+    * ------------------------------------------------------------------- */
+    @media screen and (max-width:1300px) {
+      .contact-email {
+        font-size: 10rem;
+      }
+    
+      .contact-infos {
+        font-size: 4rem;
+      }
+    
+      .contact-infos h4 {
+        font-size: 2rem;
+      }
+    
+    }
+    
+    @media screen and (max-width:1200px) {
+      .contact-email {
+        font-size: 9rem;
+      }
+    
+      .contact-infos {
+        margin-top: 9.6rem;
+      }
+    
+    }
+    
+    @media screen and (max-width:1024px) {
+      .contact-email {
+        font-size: 7.2rem;
+      }
+    
+      .contact-infos {
+        font-size: 3.8rem;
+      }
+    
+      .contact-infos h4 {
+        font-size: 1.8rem;
+      }
+    
+    }
+    
+    @media screen and (max-width:800px) {
+      .s-contact {
+        padding-top: 16rem;
+      }
+    
+      .contact-email {
+        font-size: 9vw;
+      }
+    
+      .contact-infos {
+        font-size: 3.6rem;
+      }
+    
+    }
+    
+    @media screen and (max-width:600px) {
+      .contact-social ul li {
+        margin-right: 1.2rem;
+      }
+    
+      .contact-social ul li::before {
+        display: none;
+      }
+    
+    }
+    
+    @media screen and (max-width:400px) {
+      .contact-infos {
+        font-size: 3rem;
+      }
+    
+    }
+    .ss-go-top {
+      position: absolute;
+      top: -1px;
+      right: 6rem;
+      z-index: 2;
+    }
+    
+    .ss-go-top a {
+      display: block;
+      background: rgba(255, 255, 255, 0.05);
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      border: 0 none;
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      transition: all .3s;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(../images/icons/icon-arrow-up.svg);
+      background-size: 10px 16px;
+      position: relative;
+    }
+    
+    .ss-go-top a:hover,
+    .ss-go-top a:focus {
+      background-color: #cf1767;
+      color: #ffffff;
+    }
+    
+    .ss-go-top::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.05);
+      position: absolute;
+      top: -115px;
+      left: 50%;
+    }
+    
+    .ss-go-top::after {
+      content: "back to top";
+      display: block;
+      float: left;
+      width: 120px;
+      font-size: 1.2rem;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      color: rgba(255, 255, 255, 0.15);
+      transition: all 0.5s;
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+      transform-origin: left bottom;
+      position: absolute;
+      left: calc(30px + 15px);
+      top: -165px;
+    }
+    
+    /* ------------------------------------------------------------------- 
+     * responsive:
+     * footer
+     * ------------------------------------------------------------------- */
+    @media screen and (max-width:1200px) {
+      .ss-go-top {
+        right: 3rem;
+      }
+    
+    }
+    
+    @media screen and (max-width:900px) {
+      .ss-go-top {
+        right: 0;
+      }
+    
+      .ss-go-top::before,
+      .ss-go-top::after {
+        display: none;
+      }
+    
+    }
+    
+    @media screen and (max-width:600px) {
+      .ss-copyright {
+        margin-top: 9rem;
+        padding: 0;
+        text-align: center;
+      }
+    
+      .ss-copyright span {
+        display: block;
+      }
+    
+      .ss-copyright span::after {
+        display: none;
+      }
+    
+      .ss-go-top {
+        right: 50%;
+        margin-right: -30px;
+      }
+    
+    }
+    
+    @media screen and (max-width:400px) {
+      .ss-copyright span {
+        font-size: 13px;
+      }
+    
+    }
