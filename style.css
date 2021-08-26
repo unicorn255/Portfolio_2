@@ -119,11 +119,15 @@ h6,
 p img {
   margin: 0;
 }
+.img-mobile{
+  width: 250px;
+  float:inherit;
+}
 
 p.lead {
   font-family: "Lora", serif;
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   line-height: 1.833;
   margin-bottom: 3.6rem;
   color: #000000;
@@ -215,6 +219,7 @@ h4,
 p {
   font-size: small;
   text-rendering: optimizeLegibility;
+  margin-top: 5px;
 }
 
 em,
