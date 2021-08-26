@@ -1350,7 +1350,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(./images/services-bg.jpg);
   color: rgba(255, 255, 255, 0.7);
   position: relative;
 }
@@ -1420,7 +1420,10 @@ hr {
   line-height: 1;
   color: #cf1767;
 }
-
+.item-service__content::before{
+  background-image: url(./images/wheel-500.jpg);
+  opacity: 0.7;
+}
 /* ------------------------------------------------------------------- 
      * responsive:
      * services
