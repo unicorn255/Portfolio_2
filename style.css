@@ -87,7 +87,7 @@ h2,
 .h2 {
   font-size: 3rem;
   line-height: 1.2;
- 
+
 }
 
 h3,
@@ -195,9 +195,11 @@ h6,
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
-h2{
+
+h2 {
   color: #ffffff;
 }
+
 h1,
 .h1,
 h2,
@@ -211,7 +213,7 @@ h4,
 }
 
 p {
-  font-size:small;
+  font-size: small;
   text-rendering: optimizeLegibility;
 }
 
@@ -878,6 +880,7 @@ hr {
   margin: 2.4rem 0 1.6rem;
   height: 0;
 }
+
 .wide {
   max-width: 1400px;
 }
@@ -1060,22 +1063,26 @@ hr {
   width: 72px;
   background-color: #cf1767;
 }
-.certificate-box{
+
+.certificate-box {
   display: flex;
-  
+
 }
-.certificate img{
-  width:100%;
-  height:auto;
+
+.certificate img {
+  width: 100%;
+  height: auto;
 }
-.certificate-box > div{
+
+.certificate-box>div {
   width: 100px;
   height: 100px;
   transition: all 2s;
 }
-.certificate-box > div:hover{
-  width:800px;
-  height:800px;
+
+.certificate-box>div:hover {
+  width: 800px;
+  height: 800px;
 }
 
 
@@ -1553,6 +1560,7 @@ hr {
 .header-social li a {
   color: #ffffff;
 }
+
 .s-header {
   position: absolute;
   top: 2rem;
@@ -1987,9 +1995,11 @@ hr {
   }
 
 }
-.row-back{
+
+.row-back {
   position: relative;
 }
+
 .ss-go-top {
   position: absolute;
   top: -1px;
@@ -2013,7 +2023,7 @@ hr {
   transition: all .3s;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/icons/icon-arrow-up.svg);
+  background-image: url(./images/icons/icon-arrow-up.svg);
   background-size: 10px 16px;
   position: relative;
 }
@@ -2055,6 +2065,7 @@ hr {
   left: calc(30px + 15px);
   top: -165px;
 }
+
 footer {
   font-family: "Roboto", sans-serif;
   background-color: #000000;
@@ -2195,6 +2206,7 @@ template {
 [hidden] {
   display: none;
 }
+
 html[data-useragent*='MSIE 10.0'] .ss-go-top::before,
 html[data-useragent*='MSIE 10.0'] .ss-go-top::after,
 html[data-useragent*='rv:11.0'] .ss-go-top::before,
